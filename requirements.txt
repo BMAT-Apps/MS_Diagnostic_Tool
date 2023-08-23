@@ -1,0 +1,7 @@
+PyQt5
+PyQt5-sip
+PyQtWebEngine
+json5==0.9.5
+numpy==1.22.0
+scikit-learn==1.2.2
+pandas==1.5.3
