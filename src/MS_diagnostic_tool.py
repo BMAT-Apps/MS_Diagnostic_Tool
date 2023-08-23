@@ -306,13 +306,9 @@ Multiple Sclerosis Diagnosis Tool:
         
         pred = model.predict(X_test)
         pred = pred[0]
-        print(pred)
         pred_proba = model.predict_proba(X_test)
-        print(pred_proba)
         pred_proba = pred_proba[::,pred]
-        print(pred_proba)
         conf_lvl = pred_proba[0]
-        print(conf_lvl)
         
         diagnostic = 'Multiple Sclerosis' if pred == 1 else 'Non Multiple Sclerosis'
         
