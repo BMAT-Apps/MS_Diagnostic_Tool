@@ -72,6 +72,7 @@ def launch(parent, add_info=None):
     None.
 
     """
+        
     pwd = pjoin(__file__.replace('MS_diagnostic_tool.py', ''))
     window = MainWindow(parent, add_info={'pwd':pwd})
     window.show()
@@ -457,6 +458,14 @@ class CVSWidget(QWidget):
         
         
 if __name__ == '__main__':
+    
+    if not QApplication.instance():
+        app = QApplication(sys.argv)
+    else:
+        app = QApplication.instance()
+    
     launch(None, add_info=None)
+    
+    app.exec()
 
 
