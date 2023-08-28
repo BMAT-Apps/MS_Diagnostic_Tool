@@ -312,7 +312,7 @@ Multiple Sclerosis Diagnosis Tool:
         
         diagnostic = 'Multiple Sclerosis' if pred == 1 else 'Non Multiple Sclerosis'
         
-        return f'{diagnostic} \t (Confidence Level = %.4f)' % conf_lvl
+        return f'{diagnostic} \t (Likelihood = %.4f)' % conf_lvl
         
     
     def close_app(self):
@@ -352,13 +352,13 @@ class CVSWidget(QWidget):
         self.cvs_tot_input.setPlaceholderText('Total CVS (e.g. 65)')
         self.cvs_tot_p = QLabel('%')
         
-        self.ro6_lab = QLabel('Ro6:')
+        self.ro6_lab = QLabel('Select6*:')
         self.ro6_y = QCheckBox('Yes')
         self.ro6_n = QCheckBox('No')
         self.ro6_y.stateChanged.connect(self.ro6_y_toggle)
         self.ro6_n.stateChanged.connect(self.ro6_n_toggle)
         
-        self.ro3_lab = QLabel('Ro3:')
+        self.ro3_lab = QLabel('Select3*:')
         self.ro3_y = QCheckBox('Yes')
         self.ro3_n = QCheckBox('No')   
         self.ro3_y.stateChanged.connect(self.ro3_y_toggle)
