@@ -16,13 +16,11 @@ This pipeline is a machine learning model based on a Logistic Regression to prop
 
   * Total CVS: enter the % of CVS positive lesions across all eligible (\*) brain lesions (e.g. 56%).
 
- This rule yields better diagnostic but is tedious and time consuming (manual counting of all eligible cerebral lesions).
-
   * Select6\*: Enter the Select6\* results for CVS.<sup>1</sup> Either Yes or No 
 
   * Select3\*: Enter the Select3\* results for CVS.<sup>1</sup> Either Yes or No 
 
- If results from more than one CVS diagnostic assessments are entered together, only one will be used for inference, based on the following order: (1) Total CVS, (2) Ro6, (3) Ro3 
+ If results from more than one CVS diagnostic assessments are entered together, only one will be used for inference, based on the following order: (1) Total CVS, (2) Ro6, (3) Ro3. Total CVS yields better diagnostic but is tedious and time consuming (manual counting of all eligible cerebral lesions). 
 
 * CL: Enter the number of CL of the subject.<sup>2</sup> 
 
