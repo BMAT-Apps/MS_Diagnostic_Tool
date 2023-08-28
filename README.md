@@ -16,7 +16,7 @@ This pipeline is a machine learning model based on a Logistic Regression to prop
 
   * Total CVS: enter the % of CVS positive lesions across all eligible (\*) brain lesions (e.g. 56%).
 
-This rule yields better diagnostic but is tedious and time consuming (manual counting of all eligible cerebral lesions).
+  This rule yields better diagnostic but is tedious and time consuming (manual counting of all eligible cerebral lesions).
 
   * Select6\*: Enter the Select6\* results for CVS.<sup>1</sup> Either Yes or No 
 
@@ -179,7 +179,7 @@ To install all the required python package to run properly the application, open
 pip install -r requirements.txt 
 ```
 
-(\*\*) ⚠️ **if using M1 or M2 Mac you need to right click on the Terminal app and select “Get Info”. Then, check “Open using Rosetta”.** ⚠️
+(\*\*) ⚠️ **if using M1 or M2 Mac you need to right click on the Terminal app and select “Get Info”. Then, check “Open using Rosetta” before installing the required packages.** ⚠️
 
 ### Launching application 
 
