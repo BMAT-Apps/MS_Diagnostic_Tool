@@ -57,6 +57,8 @@ from sklearn.linear_model import LogisticRegression
 import pandas as pd
 
 
+basedir = os.path.dirname(__file__)
+
 
 def launch(parent, add_info=None):
     """
@@ -73,8 +75,8 @@ def launch(parent, add_info=None):
 
     """
         
-    pwd = pjoin(__file__.replace('MS_diagnostic_tool.py', ''))
-    window = MainWindow(parent, add_info={'pwd':pwd})
+    # pwd = pjoin(__file__.replace('MS_diagnostic_tool.py', ''))
+    window = MainWindow(parent, add_info={})
     window.show()
 
 
@@ -105,7 +107,7 @@ class MainWindow(QMainWindow):
         self.parent = parent
         # self.bids = self.parent.bids
         self.add_info = add_info
-        self.pwd = add_info['pwd']
+        # self.pwd = add_info['pwd']
 
         self.setWindowTitle("Multiple Sclerosis Diagnostic Tool")
         self.window = QWidget(self)
@@ -159,7 +161,7 @@ class MSDT_Tab(QWidget):
         """
         super().__init__()
         self.parent = parent
-        self.pwd = parent.pwd
+        # self.pwd = parent.pwd
         # self.bids = self.parent.bids
         self.setMinimumSize(500, 200)
         
@@ -289,7 +291,7 @@ Multiple Sclerosis Diagnosis Tool:
         
         print(model_name)
         ## import model
-        with open(pjoin(self.pwd, 'models', f'{model_name}.json'), 'r') as f:
+        with open(pjoin(basedir, 'models', f'{model_name}.json'), 'r') as f:
             model_json = json.load(f)
         
         #instantiate the model
