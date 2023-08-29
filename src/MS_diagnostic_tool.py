@@ -308,11 +308,11 @@ Multiple Sclerosis Diagnosis Tool:
         pred = pred[0]
         pred_proba = model.predict_proba(X_test)
         pred_proba = pred_proba[::,pred]
-        conf_lvl = pred_proba[0]
+        conf_lvl = pred_proba[0]*100
         
         diagnostic = 'Multiple Sclerosis' if pred == 1 else 'Non Multiple Sclerosis'
         
-        return f'{diagnostic} \t (Likelihood = %.4f)' % conf_lvl
+        return f'{diagnostic} \t (Likelihood = %2.4f %%)' % conf_lvl
         
     
     def close_app(self):

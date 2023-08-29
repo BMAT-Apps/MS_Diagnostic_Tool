@@ -20,7 +20,7 @@ This pipeline is a machine learning model based on a Logistic Regression to prop
 
   * Select3\*: Enter the Select3\* results for CVS.<sup>1</sup> Either Yes or No 
 
- If results from more than one CVS diagnostic assessments are entered together, only one will be used for inference, based on the following order: (1) Total CVS, (2) Ro6, (3) Ro3. Total CVS yields better diagnostic but is tedious and time consuming (manual counting of all eligible cerebral lesions). 
+ If results from more than one CVS diagnostic assessments are entered together, only one will be used for inference, based on the following order: (1) Total CVS, (2) Select6*, (3) Select3*. Total CVS yields better diagnostic but is tedious and time consuming (manual counting of all eligible cerebral lesions). 
 
 * CL: Enter the number of CL of the subject.<sup>2</sup> 
 
