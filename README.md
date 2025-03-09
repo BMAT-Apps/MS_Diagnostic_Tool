@@ -1,5 +1,7 @@
 # Multiple Sclerosis Diagnostic Tool  
 
+> :warning: **This pipeline is deprecated!** Use the new [MS Diagnostic Tool](https://msdiagnostictool.org)
+
 This pipeline is a machine learning model based on a Logistic Regression to propose a binary diagnostic test (MS or non-MS) based on advanced MRI biomarkers (Central Vein Sign (CVS), Cortical Lesion (CL), Paramagnetic Rim Lesion(PRL)).
 
   

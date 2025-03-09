@@ -166,6 +166,7 @@ class MSDT_Tab(QWidget):
         self.setMinimumSize(500, 200)
         
         presentation_message = """
+        This pipeline is deprecated: user https://msdiagnostictool.org instead
 Multiple Sclerosis Diagnosis Tool:
     Enter the information of the following biomarkers for each subject and 
     see if the subject is dignosed with MS or not (with a confidence level)
