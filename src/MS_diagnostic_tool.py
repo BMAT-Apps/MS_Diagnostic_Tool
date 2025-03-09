@@ -178,7 +178,7 @@ Multiple Sclerosis Diagnosis Tool:
         PRL (Paramgnetic Rim Lesions): Number of PRL
         """
         
-        self.label = QLabel()
+        self.label = QLabel('This pipeline is deprecated: use https://msdiagnostictool.org instead')
         
         # Age
         self.age_lab = QLabel('Age:')
