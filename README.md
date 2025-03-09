@@ -50,6 +50,12 @@ This pipeline is a machine learning model based on a Logistic Regression to prop
 
 ## Stand-Alone installation 
 
+## Windows installation
+
+For windows OS, you can download the *MSDT_setup.exe* installation file from the **install** folder and execute it to easily install the program.
+
+## Installation via source code
+
 This tool can either be installed via the BMAT software or it can be downloaded and installed directly from this repository. For download and installation via BMAT, please refer to [BMAT](https://github.com/ColinVDB/BMAT). 
 
 The procedure for the stand-alone download and installation is desribed hereunder. F 
